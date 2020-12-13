@@ -1,0 +1,256 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body , input , select , textarea {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "header" "main" "footer" ;
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+}
+a:hover{
+  color: rgb(145, 125, 14);
+}
+header{
+  grid-area: header;
+  background-color: #203040;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: aquamarine;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  padding: .9rem;
+}
+header a{
+  color: aquamarine;
+  text-decoration-line: none;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main{
+  flex: 3 60rem;
+}
+.sidebar {
+  flex: 1 20rem;
+}
+/* Products */
+.products {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: all .3s linear;
+}
+.product:hover{
+  box-shadow: 2px 2px 5px 0px #203040;
+}
+.products li{
+  flex: 0 1 24rem;
+  padding: 1rem;
+
+}
+.product img{
+  max-width: 37rem;
+  max-height: 47rem;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-price div,
+.product-price button {
+  text-align: center;
+  border-radius: 14px 0 0 0;
+  flex: 1;
+  overflow: hidden;
+}
+.product-price button:hover {
+  transform: scale(1.0);
+  border-radius: 14px 0 0 0;
+  font-size: 1.3rem;
+}
+.product-price div {
+  font-size: 2rem;
+}
+
+.button.primary{
+  width: 100%;
+  background-color: #203040;
+}
+.button-success{
+  padding: .5rem;
+  color: #203040;
+  background-color: #d7dce0;
+  cursor: pointer;
+}
+.button:hover {
+  border: .1rem red solid;
+  background-color: #5b83ac;
+  color: #203040;
+  font-weight: bold;
+}
+.product-price button {
+  text-align: center;
+  flex: 1;
+}
+.button{
+  padding: 1rem;
+  border: .1rem #203040 solid;
+  background-color: #203040;
+  color: aquamarine;
+  cursor: pointer;
+}
+/* filter */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .15rem #203040 solid;
+}
+.filter div {
+  flex: 1;
+}
+/* Cart */
+.cart {
+  padding: 1rem;
+  margin:  1rem;
+  margin-top: 1.4rem;
+  display: flex;
+}
+.cart-header {
+  border-bottom: .15rem #203040 solid;
+}
+.cart-items{
+  padding: 1rem;
+  width:100%;
+  list-style-type: none;
+}
+.cart-items img{
+  width: 5.9rem;
+}
+.cart-items li{
+  padding-top: 1rem;
+  display: flex;
+  border-bottom: .05rem #203040 solid;
+}.cart-items li div {
+  padding: .5rem;
+}
+.cart-items li div:last-child{
+  flex: 1;
+}
+.right{
+  text-align: right;
+}
+/* Toatal */
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.total > div {
+  font-size: 2rem;
+}
+.total > div,
+.total > button {
+  flex: 1;
+}
+/* Order checkout form */
+.form{
+  width: 100%;
+}
+.form-container{
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+.form-container li{
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  padding: 1rem;
+}
+input{
+  padding: 1rem;
+  width: 100%;
+  border: .1rem #203040 solid ;
+}
+/* Product details */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 96vh;
+}
+.product-details img {
+  max-width: 59rem;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+.product-detail-description {
+  flex: 1 1;
+  margin: 1rem;
+}
+.close-modal{
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  z-index: 1000;
+}
+/* Order */
+.order-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+}
+.order-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-details li div {
+  padding: 10px;
+}
+.order-details .items {
+  text-align:  right;
+  padding: 0;
+}
+.success-message {
+  color: green;
+}

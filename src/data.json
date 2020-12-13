@@ -1,0 +1,51 @@
+{
+    "products":[
+        {
+        "title" : "Dress 0",
+        "image" : "/images/dress2.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "availablesSize" : ["X", "L", "XL", "M" , "XXL"],
+        "price" : 95
+        },
+        {
+            "_id" : "1",
+            "title" : "Dress 1",
+            "image" : "/images/dress2.jpg",
+            "description": "about dress 1",
+            "price" : 29.9,
+            "availablesSize" : ["L", "XS", "M" , "XXL"]
+        },
+        {
+            "_id" : "2",
+            "title" : "Dress 2",
+            "image" : "/images/dress2.jpg",
+            "description": "about dress 1",
+            "price" : 29.3,
+            "availablesSize" : ["X", "L", "XL", "M" , "XXL"]
+        },
+        {
+            "_id" : "3",
+            "title" : "Dress 3",
+            "image" : "/images/dress2.jpg",
+            "description": "about dress 1",
+            "price" : 29.9,
+            "availablesSize" : ["M" , "XXL"]
+        },
+        {
+            "_id" : "4",
+            "title" : "Dress 4",
+            "image" : "/images/dress2.jpg",
+            "description": "about dress 1",
+            "price" : 29.2,
+            "availablesSize" : ["X", "L", "M"]
+        },
+        {
+            "_id" : "5",
+            "title" : "Dress 5",
+            "image" : "/images/dress2.jpg",
+            "description": "about dress 1",
+            "price" : 29.4,
+            "availablesSize" : ["X", "M", "XL" , "XXL"]
+        }
+    ]
+}
